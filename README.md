@@ -1,6 +1,6 @@
 #  𝔭𝔬𝔯𝔱𝔣𝔬́𝔩𝔦𝔬 
 
-<img src="lolizin(3).png"> 
+<img src="Imagens/lolizin(3).png"> 
 <br>
 
 # Sobre mim:
@@ -11,7 +11,7 @@
 <br>
 
 # Currículo:
-<img src="lolizin_2.png"> 
+<img src="Imagens/lolizin_2.png"> 
 
 ## Formação:
 #### -Cursando 2° ano do Ensino Médio.
