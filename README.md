@@ -13,6 +13,6 @@
 <br>
 
 ## Currículo:
-<img src="lolizin(1).png"> 
+<img src="lolizin(2).png"> 
 
 #### Tenho experiência nas linguagens de programação C++ e JavaScript, também tenho conhecimento nas linguagens de marcação HTML e estilização CSS.
