@@ -29,4 +29,7 @@
 #### Experiência na linguagem de marcação HTML.
 #### Experiência na linguagem de estilo CSS.
 
-
+# Atividades:
+### 
+###
+###
