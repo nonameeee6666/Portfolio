@@ -30,11 +30,11 @@
 #### Experiência na linguagem de estilo CSS.
 
 # Atividades:
-### Fundamentos de Design:
+## Fundamentos de Design:
 #### DesignFundamentsSite - Aula onde aprendi sobre o círculo cromático e utilizei cores triádicas para a composição do design do meu site.
 #### DesignSystem - Aula onde tive uma grande experiência com design e pude melhorar minhas habilidades em Javascript.
 #### Feliz aniversário!.png - Aula onde pude aprender sobre propriedades de cada cor, utilizando uma mesma cor com diferentes sombra, opacidade e tonalidade.
 
-### Logica Computacional:
+## Logica Computacional:
 #### Java1.java - Primeira experiência com Java
 #### JOptionPane.java - Aula importante sobre novas tags de Java, com o JOptionPane.
