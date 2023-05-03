@@ -1,0 +1,60 @@
+ CREATE TABLE Usuário(
+  nome VARCHAR(15) NOT null,  
+  ID int NOT null,    
+  Tipo_de_usuário VARCHAR(14) NOT null, /*padrão ou adm*/
+  PRIMARY KEY (ID) /*chave primária*/
+ )
+  CREATE TABLE Estrelas(
+  nome VARCHAR(15) NOT null,  
+  ID int NOT null,    
+  Data_de_descoberta int NOT null,
+  Temperatura int NOT null,
+    cor VARCHAR(15) NOT null,
+  Massa int NOT null,
+  Diâmetro int NOT null,
+    Gigantes VARCHAR(15) NOT null,
+  PRIMARY KEY (ID) /*chave primária*/
+ )
+   CREATE TABLE DSOs(
+  nome VARCHAR(15) NOT null,  
+  ID int NOT null,    
+  Data_de_descoberta int NOT null,
+  Temperatura int NOT null,
+  Massa int NOT null,
+  Diâmetro int NOT null,
+     Quasares VARCHAR(15) NOT null,
+     Buracos_Negros VARCHAR(15) NOT null,
+  Momento_angular int NOT null,
+  PRIMARY KEY (ID) /*chave primária*/
+ )
+    CREATE TABLE Planetas(
+  nome VARCHAR(15) NOT null,  
+  ID int NOT null,    
+  Data_de_descoberta int NOT null,
+  Massa int NOT null,
+  Tamanho int NOT null,
+      Planetas VARCHAR(15) NOT null,
+      Protoplanetas VARCHAR(15) NOT null,
+  PRIMARY KEY (ID) /*chave primária*/
+ )
+     CREATE TABLE Corpos_Rochosos(
+  nome VARCHAR(15) NOT null,  
+  ID int NOT null,    
+  Data_de_descoberta int NOT null,
+  Massa int NOT null,
+  Material VARCHAR(15) NOT null,
+       Cometas VARCHAR(15) NOT null,
+  Tamanho int NOT null,
+      Asteróides VARCHAR(15) NOT null,
+      Satélites VARCHAR(15) NOT null,
+  PRIMARY KEY (ID) /*chave primária*/
+ )
+      CREATE TABLE Corpos_Gasosos(
+  nome VARCHAR(15) NOT null,  
+  ID int NOT null,    
+  Data_de_descoberta int NOT null,
+  Massa int NOT null,
+  Elemento VARCHAR(15) NOT null,
+  Tamanho int NOT null,
+  PRIMARY KEY (ID) /*chave primária*/
+ ) 
