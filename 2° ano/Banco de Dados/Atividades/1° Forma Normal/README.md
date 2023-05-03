@@ -1,0 +1,1 @@
+Criar duas tabelas, uma de livros e uma de clientes. Inicialmente com atributos multivalorados e compostos e depois passar para a primeira forma normal.
