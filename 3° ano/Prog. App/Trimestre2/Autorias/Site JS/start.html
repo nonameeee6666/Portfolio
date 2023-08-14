@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PFC</title>
+</head>
+
+<body>
+    N:
+    <input id="input1" onkeyup="key()" type="number">
+    P:
+    <input id="input2" onkeyup="key()" type="number">
+        <select name="select" id="select" onchange="key()">
+        <option value="arranjo" selected>Arranjo</option>
+        <option value="comb">Combinação</option>
+        <option value="perm">Permutação</option>
+    </select>
+    <button onclick="calcular()">Calcular!</button>
+    <h1 id="out"></h1>
+    <h1 id="resultado"></h1>
+
+    <style>
+     body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        select, input, button {
+            margin: 5px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+    </style>
+    <script>
+        select = document.getElementById("select")
+        out = document.getElementById("out")
+        resultado = document.getElementById("resultado")
+        input1 = document.getElementById("input1")
+        input2 = document.getElementById("input2")
+        function key() {
+            input1.value = input1.value.replace(/[^0-9]/g, ''); // Remove caracteres não numéricos
+            input2.value = input2.value.replace(/[^0-9]/g, ''); // Remove caracteres não numéricos
+            if (input1.value !== "" && input2.value !== "") {
+                switch (select.value) {
+                    case "arranjo":
+                        out.innerHTML = "A " + input1.value + ", " + input2.value + " = " + input1.value + "!/(" + input1.value + " - " + input2.value + ")!";
+                        break;
+                    case "comb":
+                        out.innerHTML = "C " + input1.value + ", " + input2.value + " = " + input1.value + "!/" + input2.value + "!(" + input1.value + " - " + input2.value + ")!";
+                        break;
+                    case "perm":
+                        out.innerHTML = "P " + input1.value + ", " + input2.value + " = " + input1.value + "!/" + input2.value + "!";
+                        break;
+                }
+            }
+        }
+        function calcular() {
+            switch (select.value) {
+                case "arranjo":
+                    resultado.innerHTML = "R: " + factorial(input1.value) / factorial((input1.value - input2.value));
+                    break;
+                case "comb":
+                    resultado.innerHTML = "R: " + factorial(input1.value) / factorial(input2.value) * factorial((input1.value - input2.value));
+                    break;
+                case "perm":
+                    resultado.innerHTML = "R: " + factorial(input1.value) / factorial(input2.value)
+                    break;
+            }
+        }
+        var f = []; //source: https://stackoverflow.com/questions/3959211/what-is-the-fastest-factorial-function-in-javascript#:~:text=factorial%20%3D%20(function()%20%7B,to%20speed%20it%20even%20more.
+        function factorial(n) {
+            try {
+                if (n == 0 || n == 1)
+                    return 1;
+                if (f[n] > 0)
+                    return f[n];
+                return f[n] = factorial(n - 1) * n;
+            } catch (error) {
+                return 0;
+            }
+        }
+    </script>
+</body>
+</html>

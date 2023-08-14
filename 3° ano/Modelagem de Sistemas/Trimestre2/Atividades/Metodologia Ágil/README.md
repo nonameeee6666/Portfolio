@@ -1,2 +1,5 @@
-# Metodologia Ágil
-## Resumo BDD, DDD, TDD e metodologias de organização: <a src="https://glaze-colt-42e.notion.site/Metodologia-gil-fcafd5f17f9042ec8fc8790b01ee39d1">
+# Teste de Sistemas
+## Estudos relacionados a TDD e Testes
+### <a src="https://docs.google.com/document/d/1gTNVlaWUs2waPnfNRRM4OOoTF4HoY_dkv5Rd3CjUe_o/edit?pli=1">
+<br>
+<a src"https://docs.google.com/document/d/1gTNVlaWUs2waPnfNRRM4OOoTF4HoY_dkv5Rd3CjUe_o/edit?pli=1">
